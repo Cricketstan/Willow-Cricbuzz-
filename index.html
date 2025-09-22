@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T.me/allrounder.745</title>
+  <title>Star Sports 1 Hindi HD</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">
   <style>
@@ -63,30 +63,30 @@
           'quality', 'fullscreen'
         ],
         volumeBarColors: {
-          base: 'rgb(128, 128, 128)',   
-          level: 'rgb(169, 169, 169)'   /
+          base: 'rgb(128, 128, 128)',   // gray base
+          level: 'rgb(169, 169, 169)'   // lighter gray level
         },
         seekBarColors: {
-          base: 'rgb(255, 182, 193)',   
-          buffered: 'rgb(255, 105, 180)', 
-          played: 'rgb(255, 20, 147)'   
+          base: 'rgb(255, 182, 193)',   // light pink base
+          buffered: 'rgb(255, 105, 180)', // hot pink buffered
+          played: 'rgb(255, 20, 147)'   // deep pink played
         }
       });
 
-      
-      const keyId_b64 = "NDAwMTMxOTk0YjQ0NWQ4Yzg4MTcyMDIyNDg3NjBmZGE="; 
-      const key_b64   = "MmQ1NmNiNmYwN2E3NWI5YWZmMTY1ZDUzNGFlMmJmYzQ="; 
+      // Base64 encoded key + URL
+      const keyId_b64 = "NDAwMTMxOTk0YjQ0NWQ4Yzg4MTcyMDIyNDg3NjBmZGE="; // 400131994b445d8c8817202248760fda
+      const key_b64   = "MmQ1NmNiNmYwN2E3NWI5YWZmMTY1ZDUzNGFlMmJmYzQ="; // 2d56cb6f07a75b9aff165d534ae2bfc4
       const url_b64   = "aHR0cHM6Ly9qaW90dm1ibGl2ZS5jZG4uamlvLmNvbS9icGstdHYvU3Rhcl9TcG9ydHNfSEQxX0hpbmRpX0JUUy9vdXRwdXQvaW5kZXgubXBk"; 
-      
+      // https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd
 
-      
+      // Decode
       const keyId = atob(keyId_b64);
       const key   = atob(key_b64);
       const streamUrl = atob(url_b64);
 
       let drmConfig = { clearKeys: { [keyId]: key } };
 
-      
+      // Token manually added
       let cookieHeader = "__hdnea__=st=1758532294~exp=1758618694~acl=/*~hmac=d5791b4a59ef2574eeb294a5cd18223b235bf3c5c571c7782eb9f53e17f347b2";
 
       player.configure({
