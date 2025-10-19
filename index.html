@@ -1,1 +1,40 @@
-lund lele mera 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>h</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    /* Hide counter completely */
+    .hidden-counter {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Visitor counter (hidden) -->
+  <img class="hidden-counter" 
+       src="https://visit-counter.vercel.app/counter.png?page=allrounder.com&s=40&c=00ff00&bg=00000000&no=10&ff=digi&tb=&ta=" 
+       alt="visitor counter">
+
+  <!-- Main iframe -->
+  <iframe src="https://suii-willow.vercel.app/" 
+          loading="lazy"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection" 
+          allowfullscreen>
+  </iframe>
+</body>
+</html>
